@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Learning JavaScript</h1>
+        <p>with deepak maurya</p>
+    </div>
+    <hr style="color: black;">
+    <div class="practic">
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo">JS can change html content.</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML='hello javascript!'">click me</button>
+    </div>
+<div class="container">
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" alt="" style="width: 100px;">
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</div>
+
+    <script>
+        // var number1=35;
+        // var number2='45';
+        // alert('my fav number is'+number2);
+    
+        //array------------>
+        // var colors=['red','blue','green'];
+        // colors.push('orange');
+        // colors.pop();
+        // colors.sort();
+        // colors.reverse();
+        // alert(colors);
+
+        //-------loop----------->
+    //    for(var i=0;i<10;i++){
+    //         console.log(i);
+    //     }
+    var numbers=[2,5,3,6,7];
+    numbers.forEach(function(number) {
+        console.log(number);
+    });
+
+    </script>
+</body>
+</html>
