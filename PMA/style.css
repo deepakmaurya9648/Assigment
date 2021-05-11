@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    
+    
+}
+.container img{
+    width: 100%;
+    align-items: center;
+}
+.float{
+    padding-top: 10px;
+	position:fixed;
+	width:80px;
+	height:40px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:5px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    text-decoration: none;
+}

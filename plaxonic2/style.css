@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: radial-gradient(66.46% 72.46% at 74.11% 50%, #FFFFFF 0%, #EDF2E1 100%);
+    
+}
+.navbar{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    
+
+}
+.navbar .logo{
+    margin-top: 25px;
+   width: 115.83px;
+   height: 69.11;
+   background-image: url('images/logo1.png');
+   background-size: cover;
+   
+   
+   
+}
+nav{
+    margin-top: 30px;
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+     color: #141414;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-1{
+    margin-top: 140px;
+
+    flex-basis: 30%;
+    position: relative;
+    justify-content:space-between;
+    margin-left: 80px;
+}
+.col-1 h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    color: #0F3A06;
+    font-style: normal;
+    font-weight: 300;
+}
+.col-1 p{
+    margin-top: 20px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+}
+button{
+    font-family: 'Epilogue', sans-serif;
+    margin-right: 10px;
+    width: 150px;
+    height: 50px;
+    border: 1.5px solid #0F3A06;
+    margin-top: 30px;
+    padding:12px 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: #0F3A06;
+    background:transparent;
+    border-radius: 37px;
+    cursor: pointer;
+    
+}
+button img{
+    margin: 0 5px 2px 5px;
+    width: 30px;
+
+}
+.col-1 .carousal{
+    margin-top: 70px;
+}
+.col-1 .carousal img{
+    position: relative;
+    width:7px;
+    margin-right:20px ;
+    justify-content:space-around;
+    
+}
+
+.col-2{
+    flex-basis: 70%;
+    position: relative;
+
+}
+
+.col-2 .img1{
+    width: 70%;
+}
+.col-2 .img2{
+    width: 95%;
+}
+.col-2 .img3{
+    width: 85%;
+}
+.col-2 .imgBox1{
+    position: absolute;
+
+top: -15;
+left: 260px;
+bottom: 40px;
+
+}
+.col-2 .imgBox2{
+    position: absolute;
+    z-index: 1;
+    top: -110px;
+    left: 120px;
+    
+
+
+}
+.col-2 .imgBox3{
+    position:absolute;
+top: -50px;
+left: 200px;
+bottom: 0;
+
+}
