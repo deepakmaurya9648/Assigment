@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js object</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button id="click">click</button>
+</body>
+<!-- <script>
+var student={name:"deepak",age:21,study:"CSE"};
+document.getElementById("demo").innerHTML=student.name+" of the age "+student.age+" studies "+student.study;
+</script>
+<script>
+    function stud(name,age,study){
+        this.name=name;
+        this.age=age;
+        this.study=study;
+    }
+    var student=stud("harry",23,"cse");
+    document.getElementById("demo").innerHTML=student.name+" of the age "+student.age+" studies "+student.study;
+</script> -->
+<script>
+    //object method
+    var student={name:"deepak",age:21,study:"CSE"};
+    function sayHi(){
+        alert("hello!");
+    } 
+    student.message=sayHi;
+    document.getElementById("demo").innerHTML="hi "+student.name;
+    document.getElementById("click").onclick=student.message;
+</script>
+</html>
