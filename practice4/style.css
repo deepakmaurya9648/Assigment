@@ -31,6 +31,7 @@
 nav{
     flex: 1;
     padding-left: 60px;
+    
 }
 nav ul li{
     list-style: none;
@@ -43,7 +44,9 @@ nav ul li a{
 }
 .content{
     margin-top: 10%;
-    margin-left: 10%;
+    
+    position: absolute;
+    left: 1%;
 }
 .content h1{
     font-size: 60px;
@@ -78,7 +81,8 @@ nav ul li a{
     height: 90%;
     position: absolute;
     bottom: 0;
-    right:160px;
+    right:10px;
+    
     
 }
 .social-links{
