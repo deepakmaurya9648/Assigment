@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }:root{
+            --b-a-width:20vw;
+            --b-a-md-width:15vw;
+            --b-a-sm-width:20vw;
+        }
+        .main{
+            background-color:#3498db;
+            height: 100vh;
+            width: 100vw;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main h1{
+            font-size: 50px;
+            font-weight:bold;
+            display: block;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        h1::before{
+            content: "";
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: var(--b-a-width);
+            border-bottom: 5px solid #2c5e50;
+        }
+        h1::after{
+            content: "";
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            width: var(--b-a-width);
+            border-bottom: 5px solid #2c5e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>PSEUDO CLASS</h1>
+    </div>
+</body>
+</html>
