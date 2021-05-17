@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            width: 90%;
+            height: 90vh;
+            background: cornflowerblue;
+            display:block;
+            justify-content: center;
+            align-items: center;
+        }
+        #inner{
+            width: 80%;
+            height: 50vh;
+            background:palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background: green;
+            text-align: center;
+            align-items: center;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h1>Outer</h1>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box" id="box3">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </div>
+    <script>
+       
+       var element;
+       //!---parent traversal--------------------------------------------------->
+    // //    element=document.getElementById("inner").parentElement;
+    // element=document.getElementById("inner").addEventListener("click",function(){
+    //     document.getElementById("inner").parentElement.style.background="yellow";
+    // });
+        // console.log(element);
+       //!---children traversal--------------------------------------------------->
+
+        // element=document.getElementById("outer").children;
+        // element=document.getElementById("inner").children;
+        // document.getElementById("inner").children[1].style.background="white";
+
+               //!---first and last child traversal--------------------------------------------------->
+        // element=document.getElementById("inner").firstElementChild.style.color="blue";
+        // element=document.getElementById("inner").lastElementChild;
+
+        //-----------slibling and sibling element------------------------->>
+        // element=document.getElementById("inner").firstElementChild.style.color="blue";
+        element=document.getElementById("box3").nextElementSibling;
+        element=document.getElementById("box3").previousElementSibling.innerHTML;
+
+        console.log(element);  
+    </script>
+</body>
+</html>

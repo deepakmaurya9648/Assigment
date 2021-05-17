@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            height: 200px;
+            width: 50%;
+            position: absolute;
+            top: 110px;
+            margin:0 25%;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+<h1>hello this is append method</h1>
+    </div>
+    <script>
+        var element;
+      var newElement=document.createElement("div");
+      var text=document.createTextNode("hello this is text node");
+      element=newElement.appendChild(text);
+      document.getElementById("content").appendChild(element);
+      
+        console.log(element); 
+        console.log(text); 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            width: 90%;
+            height: 90vh;
+            background: cornflowerblue;
+            display:block;
+            justify-content: center;
+            align-items: center;
+        }
+        #inner{
+            width: 80%;
+            height: 50vh;
+            background:palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background: green;
+            text-align: center;
+            align-items: center;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h1>Outer</h1>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box" id="box3">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </div>
+    <script>
+       
+      var element;
+      element=document.createElement("div");
+      var text=document.createTextNode("hello this is text node");
+      var comment=document.createComment("hello this is comment");
+
+        console.log(comment); 
+
+        console.log(element); 
+        console.log(text); 
+    </script>
+</body>
+</html>
