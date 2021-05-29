@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Data</title>
+</head>
+<body>
+    <h1 id="apiData">hello</h1>
+
+    <script>
+        fetch('https://api.covid19api.com/summary').then((apiData)=>{
+            // console.log(apiData);
+            return apiData.json();
+        }).then((data)=>{
+            console.log(data.Countries[76].Country);
+            const countryName=data.Countries[76].Country;
+            document.getElementById('apiData').innerHTML=countryName;
+        }).catch((e)=>{
+            console.log(`The Error:${e}`);
+        });
+    </script>
+</body>
+</html>

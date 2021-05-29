@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #div{
+            width: 90%;
+            background: black;
+            margin: auto;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        body img{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <script>
+        
+        fetch('https://jsonplaceholder.typicode.com/photos').then((data)=>{
+            console.log(data);
+            return data.json();
+        }).then((imagedata)=>{
+            for(var i=0;i<1000;i++){
+                var img=document.createElement('IMG');
+                img.src=imagedata[i].url;
+                document.getElementById('div').appendChild(img); 
+            }
+        }).catch((e)=>{
+            console.log(e);
+        })
+        
+    </script>
+</body>
+</html>

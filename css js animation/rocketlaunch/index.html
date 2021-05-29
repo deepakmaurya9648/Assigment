@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="scene">
+        <div class="rocket" id="rocket">
+            <img src="rocket.png" alt="">
+        </div>
+        <a href="" id="a">B</a>
+    </div>
+    <script>
+        document.addEventListener('mousemove',function(e){
+           var rocket= document.querySelector('#rocket');
+           rocket.style.left=e.offsetX+'px';
+           rocket.style.top=e.offsetY+'px';
+        })
+        document.getElementById('rocket').addEventListener('click',function(){
+            document.removeEventListener('mousemove');
+        })
+        function stars(){
+            let count=20;
+            let scene=document.querySelector('.scene');
+            let i=0;
+            while(i<count){
+                let star=document.createElement('i');
+                let x=Math.floor(Math.random()*window.innerWidth);
+                let duration=0.5+Math.random()*1;
+                let h=Math.random()*100;
+
+                star.style.left=x+'px';
+                star.style.width=1+'px';
+                star.style.height=75+h+'px';
+                star.style.animationDuration=duration+'s';
+
+
+                scene.appendChild(star);
+                i++
+                
+                
+            }
+            if(rocket.style.left==star.style.left){
+                duration=0;
+            }
+            console.log(window.innerWidth);
+        }
+        stars();
+    </script>
+    <script>
+
+        let element=document.getElementById('a');
+       element.addEventListener('click',function(){
+        document.getElementById('rocket').style.animation='animateY 1s ease 1';
+        })
+    </script>
+</body>
+</html>

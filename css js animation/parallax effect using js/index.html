@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="" class="logo">Jungle</a>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        <img src="images/bird1.png" id="bird1" alt="">
+        <img src="images/bird2.png" id="bird2" alt="">
+        <img src="images/forest.png" id="forest" alt="">
+        <a href="#" id="btn">Explore</a>
+        <img src="images/rocks.png" id="rocks" alt="">
+        <img src="images/water.png" id="water" alt="">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Explicabo atque corrupti minima numquam id tempore, eveniet
+             <br>
+              dolores quis, quos, aperiam exercitationem sequi earum maiores? 
+              Illo cumque molestias odio quam deleniti.
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo atque corrupti minima numquam id tempore, eveniet
+            <br>
+             dolores quis, quos, aperiam exercitationem sequi earum maiores? 
+             Illo cumque molestias odio quam deleniti. <br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Explicabo atque corrupti minima numquam id tempore, eveniet
+             <br>
+              dolores quis, quos, aperiam exercitationem sequi earum maiores? 
+              Illo cumque molestias odio quam deleniti.</p>
+             
+    </div>
+
+    <script>
+        var text=document.getElementById('text');
+        var bird1=document.getElementById('bird1');
+        var bird2=document.getElementById('bird2');
+        var forest=document.getElementById('forest');
+        var rocks=document.getElementById('rocks');
+        var water=document.getElementById('water');
+        var btn=document.getElementById('btn');
+        var header=document.getElementById('header');
+        document.addEventListener('scroll',function(){
+            let value=window.scrollY;
+
+            text.style.top=50+value*-0.5+'%';
+            bird1.style.top=value*-1.5+'px';
+            bird1.style.left=value*2+'px';
+            bird2.style.top=value*-1.5+'px';
+            bird2.style.left=value*-5+'px';
+            btn.style.marginTop=value*1.5+'px';
+            rocks.style.top=value*-0.12+'px';
+            forest.style.top=value*0.25+'px';
+            header.style.top=value*0.5+'px';
+
+        })
+    </script>
+</body>
+</html>

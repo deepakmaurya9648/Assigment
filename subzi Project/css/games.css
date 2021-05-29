@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@450&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-self:center;
+    align-items: center;
+}
+.navbar{
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.navbar .logo{
+    margin-top: 25px;
+   width: 115.83px;
+   height: 69.11;
+   background-image: url('logo1.png');
+   background-size: cover; 
+}
+nav{
+    margin-top: 30px;
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    
+    font-size: 14px;
+    line-height: 14px;
+     color: #141414;
+}
+nav ul li a:hover{
+    padding-bottom: 21px;
+    border-bottom: 2px solid #87EA00;
+}
+hr{
+    border-top:0.2px solid #bbbbbb;
+}
+#games{
+    padding-bottom: 21px;
+    border-bottom: 2px solid #87EA00;
+}
+
+.section-1{
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.container-1{
+    width:75%;
+    margin: 0 auto;
+    height:400px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+   margin-bottom: 60px;
+}
+.container-1 .content{
+    width: 40%
+}
+.container-1 .content h2{
+    font-family: 'Anton', sans-serif;
+    color: #87EA00;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container-1 .content h1{
+    font-family: 'Anton', sans-serif;
+    color: #141414;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.container-1 .content p{
+    font-family: 'Epilogue', sans-serif;
+    color: #141414;
+    font-size: 11px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-style: normal;
+}
+.container-1 .images{
+    width: 50%;
+    margin:80px 0;
+}
+.container-1 .images .img1{
+    width: 60%;
+    margin-top: 75px;
+    margin-left: 120px;
+}
+.container-1 .images .img2{
+    width: 9%;
+    position: absolute;
+    right: 460px;
+    top: 270px;
+}
+.container-1 .images .img3{
+    width: 30%;
+    margin-left: 185px;
+    margin-top: 10px;
+}
+.container-1 .images .img4{
+    width: 12%;
+    position: absolute;
+    top: 120px;
+    z-index: -1;
+    right: 170px;
+}
+.container-1 .images .img5{
+    width: 7%;
+    position: absolute;
+    top: 250px;
+    z-index: -1;
+    right: 530px;
+}
+.section-1 h1{
+    
+    font-family: 'Anton', sans-serif;
+    color: #141414;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+section .section-2{
+    width: 100%;
+}
+.section-2 .img6{
+    width: 100%;   
+}
+.section-2 .img7{
+    position:absolute;
+    width:30%;
+    margin-top: 170px;
+    right:150px;
+}
+
+.section-2 .content{
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 60px;
+    padding-bottom:50px;
+}
+.section-2 .content h2{
+    font-family: 'Anton', sans-serif;
+    color:grey;
+    font-size: 20px;
+    font-weight: 500;
+}
+.section-2 .content h1{
+    font-family: 'Anton', sans-serif;
+    color:#141414;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.section-2 .content strong{
+    font-family: 'Epilogue', sans-serif;
+    color: #141414;
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-style: normal;
+}
+.section-2 .content p{
+    font-family: 'Epilogue', sans-serif;
+    color: #141414;
+    font-size: 11px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-style: normal;
+}
+.btn{
+    display: flex;
+    align-items: center;
+}
+.btn img{
+    width:30%;
+    margin:20px 15px 0 0;
+}
+
+section .section-3{
+    width: 100%;
+}
+.section-3 .img8{
+    width: 100%;   
+}
+.section-3 .img9{
+    position:absolute;
+    width:30%;
+    margin-top: 170px;
+    left:150px;
+}
+.section-3 .box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 150px;
+}
+.section-3 .content{
+    
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 60px;
+    padding-bottom:50px;
+}
+.section-3 .content h2{
+    font-family: 'Anton', sans-serif;
+    color:grey;
+    font-size: 20px;
+    font-weight: 500;
+}
+.section-3 .content h1{
+    font-family: 'Anton', sans-serif;
+    color:#141414;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.section-3 .content strong{
+    font-family: 'Epilogue', sans-serif;
+    color: #141414;
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-style: normal;
+}
+.section-3 .content p{
+    font-family: 'Epilogue', sans-serif;
+    color: #141414;
+    font-size: 11px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-style: normal;
+}
+
+
+footer{
+    width: 100%;
+    height: 150px;
+    background: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+footer .copywrite img{
+    width: 115.83px;
+    height: 69.11;
+}
+footer .copywrite p{
+    font-family: 'Epilogue', sans-serif;
+    color: #FFFFFF;
+    font-size: 8px;
+    font-style: normal;
+}
+footer .socialLinks{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0 10px 0 10px;
+}
+footer .socialLinks a{
+    font-family: 'Epilogue', sans-serif;
+    color: #FFF;
+    font-size: 14px;
+    
+    margin: 5px 15px 0 15px;
+    font-style: normal;
+    text-decoration: none;
+}
+footer .socialLinks h3{
+    color: #fff;
+    
+}
+
+footer .support a{
+    font-family: 'Epilogue', sans-serif;
+    color: #FFF;
+    font-size: 14px;
+    
+    margin: 5px 15px 0 15px;
+    font-style: normal;
+    text-decoration: none;
+}

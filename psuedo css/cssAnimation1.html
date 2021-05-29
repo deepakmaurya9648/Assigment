@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 540px;
+            width: 300px;
+            background: rgba(0,0,0,0.1);
+            position: relative;
+            transform: rotate(-30deg) skew(25deg) scale(0.8);
+            margin-top: 150px;
+            transition: 0.5s;
+
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: 0.5s;
+        }
+        .container:hover img:nth-child(4){
+            transform: translate(160px,-160px);
+            opacity: 1;
+        }
+        .container:hover img:nth-child(3){
+            transform: translate(120px,-120px);
+            opacity: 0.8;
+        }
+        .container:hover img:nth-child(2){
+            transform: translate(80px,-80px);
+            opacity: 0.6;
+        }
+        .container:hover img:nth-child(1){
+            transform: translate(40px,-40px);
+            opacity: 0.4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="slider-img11 1.png" alt="">
+        <img src="slider-img11 1.png" alt="">
+
+        <img src="slider-img11 1.png" alt="">
+
+        <img src="slider-img11 1.png" alt="">
+
+    </div>
+</body>
+</html>

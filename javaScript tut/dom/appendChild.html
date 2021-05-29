@@ -18,17 +18,17 @@
 </head>
 <body>
     <div id="content">
-<h1>hello this is append method</h1>
+        <p>this is paragraph</p>
     </div>
     <script>
         var element;
-      var newElement=document.createElement("div");
+      var newElement=document.createElement("h1");
       var text=document.createTextNode("hello this is text node");
-      element=newElement.appendChild(text);
-      document.getElementById("content").appendChild(element);
-      
-        console.log(element); 
-        console.log(text); 
+      newElement.appendChild(text);
+      var target=document.getElementById("content");
+      target.insertBefore(newElement,target.childNodes[0]);
+        console.log(newElement); 
+        
 
     </script>
 </body>
