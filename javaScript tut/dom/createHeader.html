@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       header{
+           width: 100%;
+           height: 100px;
+           background-color: rgb(50, 114, 231);
+       }
+       section{
+            width: 100%;
+       }
+       section img{
+           width: 100%;
+       }
+       footer{
+           width: 100%;
+           background: chocolate;
+           height: 100px;
+       }
+   </style>
+</head>
+
+<body>
+<div id="div"></div>
+    <script>
+        var text=document.createTextNode('Header');
+        var h1=document.createElement('h1');
+        h1.appendChild(text);
+        var header = document.createElement('HEADER');
+        header.innerHTML='<h1>header</h1>';
+        var main=document.createElement('SECTION');
+        main.innerHTML='<img src="https://images.unsplash.com/photo-1585220197334-4f24a2f7d57e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8NnNNVmpUTFNrZVF8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">';
+        var footer=document.createElement('FOOTER');
+        footer.innerHTML='<h1>footer</h1>';
+        document.body.appendChild(header);
+        document.body.appendChild(main);
+        document.body.appendChild(footer);
+        document.body.appendChild(h1); 
+        var nav=["home","about","contact"];
+        let node=nav.map(navItem=>{
+            var li=document.createElement('li');
+            console.log(navItem);
+            li.innerText;
+            return li;
+        })
+        document.getElementById('div').appendChild(node);
+    </script>
+</body>
+</html>

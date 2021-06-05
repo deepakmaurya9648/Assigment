@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // console.log('this is regular expression topic!');
+        // let reg=/deepak/; //this is regular exp 
+        // // reg=/deepak/g; // g means global
+        // //reg=/deepak/i; //case insensitive
+        
+        // let s="this is great code with deepak ans also Deepak bhai";
+        // let result=reg.exec(s);
+        // console.log(result);
+        // result=reg.exec(s);
+        // console.log(result);
+
+        // let result2=reg.test(s);
+        // console.log(result2);
+
+        // let result3=s.match(reg);
+        // console.log(result3);
+
+        // let result4=s.search(reg);
+        // console.log(result4);
+
+        // let result5=s.replace(reg,'maurya'); 
+        // console.log(result5);
+
+        let regex=/deepak/;
+        regx=/^deepak/; // means if string start deepak
+        regx=/deepak$/; // means if string end deepak
+        regx=/d.epak/; // means matches one charector
+        regx=/d*epak/; // means matches zero or more charector
+        regx=/de?epak?/; // means e and k are optional
+        let str="deepak is gud coder and deepak is gud learner";
+        let result=regex.exec(str);
+        console.log(result);
+    </script>
+</body>
+</html>

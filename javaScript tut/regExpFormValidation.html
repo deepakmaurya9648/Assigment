@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <h1>form validation using regexp</h1>
+    <div class="container">
+        <form action="#" onsubmit="return validation()">
+        <div class="from-group">
+          <input type="text" name="username" placeholder="username" id="user">
+        <span id="username"></span>
+        </div>
+        <div class="from-group">
+          <input type="text" name="password" placeholder="password" id="pass">
+        <span id="Password"></span>
+        </div>
+        <div class="from-group">
+          <input type="text" name="conpassword" placeholder="password" id="conpass">
+        <span id="wrongpass"></span>
+        </div>
+        <div class="from-group">
+          <input type="text" name="mobile" placeholder="mobile" id="mobile">
+        <span id="monumber"></span>
+        </div>
+        <div class="from-group">
+          <input type="text" name="email" placeholder="email" id="email">
+        <span id="emailid"></span>
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+         function validation(){
+      var user=document.getElementById('user').value;
+      var password=document.getElementById('pass').value;
+      var conPassword=document.getElementById('conpass').value;
+      var mobile=document.getElementById('mobile').value;
+      var email=document.getElementById('email').value;
+
+        let regexpName=/^[a-zA-Z0-9 ]{6,30}$/;
+        if(!regexpName.test(user)){
+            document.getElementById('username').innerHTML="pls fill valid name";
+            document.getElementById('user').style.border='1px solid red';
+            return false;
+        }
+        let regxpPass=/^(?=.*[0-9])(?=.*[!@%$^&])[a-zA-Z0-9!@%$^&]{8,15}$/
+        if(!regxpPass.test(password)){
+          document.getElementById('Password').innerHTML="pls enter strong password";
+          return false;
+        }
+        if(password!=conPassword){
+          document.getElementById('wrongpass').innerHTML="password not matching!";
+          return false;
+        }
+        let regxpMob=/^[0-9]{10}$/;
+        if(!regxpMob.test(mobile)){
+          document.getElementById('monumber').innerHTML="mobile number not exist!";
+          return false;
+        }
+        let regexpEmail=/^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,3}$/;
+        if(!regexpEmail.test(email)){
+            document.getElementById('emailid').innerHTML="pls fill valid email";
+            return false;
+        }
+         }
+
+    </script>
+  </body>
+</html>

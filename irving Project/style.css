@@ -8,6 +8,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    overflow: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -361,7 +364,7 @@ nav .fas{
 }
 .main .row .col h4{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 550;
     margin-bottom: 20px;
 }
  /* --------------------chat box css -----------------*/
@@ -641,12 +644,6 @@ nav .fas{
 
 /*------------------------ media query for 1440 width device only------------ */
 @media only screen and (max-width:1440px){
-    html, body {
-        overflow-x: hidden;
-      }
-      body {
-        position: relative
-      }
     .nav-links ul li a{
         font-size: 14px;
     }
@@ -657,12 +654,6 @@ nav .fas{
 }
 /*------------------------ media query for 1920 width device only------------ */
 @media only screen and (max-width:1920px){
-    html, body {
-        overflow-x: hidden;
-      }
-      body {
-        position: relative
-      }
     .introduction{
         padding-top: 80px;
     }
