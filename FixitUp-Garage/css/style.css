@@ -1,0 +1,1568 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+
+/*------------------- navbar css style ---------------------*/
+header{
+    width: 100%;
+    margin: auto;
+    height: 90px;
+    overflow: hidden;
+    background: #fff;
+    overflow-x: hidden;
+}
+.sticky {
+  position:sticky;
+  top: 0;
+  margin: auto;
+  width:100%;
+  z-index: 1;  
+}
+nav{
+    width: 85%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+header nav .logo{
+    flex: 1;
+    width:120px;
+    background: chartreuse;
+}
+header nav ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li{
+    height: 90px;
+    width: 90px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 15px;
+    transition: all ease .6s;
+    position: relative;
+}
+header nav ul li a{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:#000;
+    text-decoration: none;
+}
+
+header nav ul li:hover + header nav ul li a{
+    color: #FF5500;
+}
+header nav .btn{
+    padding:8px 10px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: all ease .6s;
+}
+header nav .btn i{
+    margin: 10px;
+    font-size: 14px;
+}
+header nav .btn span{
+    margin: 10px;
+}
+header nav .btn::before{
+    position: absolute;
+    content: '';
+    width:135px;
+    height: 35px;
+    border-left: 2px solid #FF5500;
+    border-top: 2px solid #FF5500;
+    top:-1px;
+    left: -5px;
+    transition: all ease .6s;
+}
+header nav .btn::after{
+    position: absolute;
+    content: '';
+    width:135px;
+    height: 35px;
+    border-bottom: 2px solid #FF5500;
+    border-right: 2px solid #FF5500;
+    right:-5px;
+    bottom: -1px;
+    transition: all ease .6s;
+}
+header nav .btn:hover::before,header nav .btn:hover::after{
+    width: 180px;
+    height: 50px;
+}
+header nav .btn:hover{
+    color: #FF5500;
+}
+
+header nav ul li:hover::before{
+    content: '';
+    width: 46px;
+    left: 0;
+    height: 46px;
+    position:absolute;
+    border-left: 3px solid #FF5500;
+    border-top: 3px solid #FF5500;
+    transform: translateX(15%) rotate(45deg) skew(-10deg, -10deg);
+    top:15px;
+    left: 14px;
+}
+header nav ul li:hover::after{ 
+    content: '';
+    width: 46px;
+    height: 46px;
+    position:absolute;
+    border-left: 3px solid #FF5500;
+    border-top: 3px solid #FF5500;
+    transform: translateX(-120%) rotate(-135deg) skew(-10deg, -10deg);
+    bottom:15px;
+    right:-40px;
+   
+}
+#menu-bar{
+    display: none;
+    width: 15px;
+    height: 15px;
+}
+.slide-menu{
+    position:fixed;
+    top:90px;
+    right:0px;
+    background:#FF5500;
+    height: 100vh;
+    width:180px;
+    text-align: left;
+    z-index: 999;
+    transition: 0.5s;
+    display: none;
+    transition: 0.5s;
+}
+.slide-menu ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+.slide-menu ul li{
+    height: 90px;
+    width: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 15px;
+    transition: all ease .6s;
+    border-bottom: 1px solid #fff;
+}
+.slide-menu ul li a{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color:#fff;
+    text-decoration: none;
+}
+
+/* -----------------slider css start----------------- */
+.slider{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: black;
+    overflow: hidden;
+}
+
+.slider .slick-slide img{
+    width:auto;
+    height:100vh;
+    opacity:1;
+}
+
+.slider .slide{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.slider .slide h1{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    top: 55%;
+    left: 10%;
+    right: 10%;
+    color: #FFFFFF;
+    font-size: 45px;
+    position: absolute;
+}
+.slider .slick-dots{
+    position: absolute;
+    top:70%;
+    display:block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    }
+
+ .slider .slick-dots li{
+        display: inline-block;
+        background:rgba(255, 255, 255,0.3);
+        margin: 10px 10px;
+        width:40px;
+        height: 10px;
+    }
+.slider .slick-dots li.slick-active{
+        background:#FFFFFF;
+    }
+.slider .slick-dots li button:before
+    {   
+     display: none;
+    }
+
+
+ /* ------------------------why us section css--------------------    */
+
+ .whyus-block{
+     width:100%;
+     margin:0 auto;
+     padding:0px 0;
+     background-image: url('../images/pattern-bg.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     text-align: center;
+     position: relative;
+     padding:30px 0 ;
+     overflow: hidden;
+ }
+
+ .whyus-block .heading{
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     text-align: center;
+ }
+
+ .whyus-block .heading h1{
+     color: #fff;
+     font-family: 'Roboto Slab', sans-serif;
+     font-size: 40px;
+     font-weight: 600;
+     margin:20px 30px;
+ }
+ .whyus-block .sub-heading{
+     font-size: 18px;
+     color: #fff;
+     line-height: 30px;
+ }
+
+ .row{
+     width: 90%;
+     margin:0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .whyus-block .row .col-1{
+     flex-basis: 45%;
+     display:flex;
+     flex-direction: column;
+     justify-self:flex-start;
+     align-items:flex-start;
+    padding-left:30px;
+    padding-top: 20px;
+ }
+
+ .whyus-block .row .col-1 p{
+     color: #fff;
+     opacity: 0.7;
+     font-size: 20px;
+     text-align: left;
+     position: relative;
+     margin-left:30px;
+     margin-bottom: 20px;
+ }
+ .whyus-block .row .col-1 p::before{
+     content: '';
+     height: 55px;
+     position: absolute;
+     left: -30px;
+     border-left: 7px solid #FF5500;
+ }
+ 
+ .whyus-block .row .col-1 .list-content ul{
+     margin:20px 0;
+ }
+ .whyus-block .row .col-1 .list-content ul li{
+    color: #fff;
+    margin:20px 0 20px 30px ;
+    font-size:18px;
+    text-align: left;
+    list-style: none;
+    position: relative;
+    
+ }
+ .whyus-block .row .col-1 .list-content ul li::before{
+     content: '';
+     background: url('../images/tick.svg');
+     background-position: center;
+     background-repeat: no-repeat;
+     position: absolute;
+     height: 30px;
+     width: 30px;
+     left:-40px;
+ }
+ .whyus-block .row .col-1 .garageTheme{
+    background: #FF5500;
+    width:100%;
+    height: 270px;
+    position: relative;
+    margin-top: 30px;
+
+}
+.whyus-block .row .col-1 .garageTheme p{
+    font-size: 18px;
+    color: #fff;
+    margin-top:10px;
+}
+.whyus-block .row .col-1 .garageTheme ul{
+    height: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   padding-left: 10px;
+}
+.whyus-block .row .col-1 .garageTheme p{
+    color: #fff;
+    font-size: 18px;
+}
+.whyus-block .row .col-1 .garageTheme ul li{
+    margin-left: 30px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    flex: 1 1 1 100px;
+    text-align: left;
+}
+ .row .col-2 img{
+     padding-top:30px;
+     flex-basis: 50%;
+     margin-left: 20px;
+ }
+/* ----------------------service sevtion style css--------------------------- */
+
+.service{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('../images/door.png');
+    background-position: center;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.service .service-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+     z-index: -1;   
+}
+.service .service-bg img{
+    width: 100%;
+}
+
+.service .row .col-1{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 50px 0;
+}
+.service .row .col-1 h1{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.service .row .col-1 p{
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 27px;
+    margin:20px 0;
+}
+/* ---------------service button-------------- */
+.service .row .col-1 .btn{
+    padding:15px 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    transition: all ease .6s;
+}
+
+.service .row .col-1 .btn::before{
+    position: absolute;
+    content: '';
+    width:135px;
+    height: 35px;
+    border-left: 2px solid #FF5500;
+    border-top: 2px solid #FF5500;
+    top:-1px;
+    left: -5px;
+    transition: all ease .6s;
+}
+.service .row .col-1 .btn::after{
+    position: absolute;
+    content: '';
+    width:135px;
+    height: 35px;
+    border-bottom: 2px solid #FF5500;
+    border-right: 2px solid #FF5500;
+    right:-5px;
+    bottom: -1px;
+    transition: all ease .6s;
+}
+.service .row .col-1 .btn:hover::before,.service .row .col-1 .btn:hover::after{
+    width: 150px;
+    height: 50px;
+}
+.service .row .col-1 .btn:hover{
+    color: #FF5500;
+}
+
+/* -------------------service button end ---------------------*/
+
+.service .row .col-2{
+    flex-basis:70%;
+    margin-left: 50px;
+}
+/* --------------------flip card css----------------- */
+.service .row .col-2 .card-space{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.flip-card {
+    background-color:#fff;
+    width: 340px;
+    height: 320px;
+    perspective: 1000px;
+    margin:10px 10px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #fff;
+    color: black;
+    padding:40px;
+    text-align: left;
+  }
+  .flip-card-front p{
+      width:45px;
+      height:45px;
+      border-radius: 50%;
+      background:#E6E6E6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .flip-card-front h3{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    line-height: 40px;
+  }
+  .flip-card-back {
+    background-color:#FF5500;
+    color: white;
+    transform: rotateY(180deg);
+    padding:30px 30px 0 30px;
+  }
+  .flip-card-back p{
+      text-align: left;
+      font-size: 18px;
+      color: #fff;
+      line-height:30px;
+      margin-bottom: 30px;
+  }
+  /* --------------learn more button css-------------- */
+  .flip-card-back .btn{
+    padding:20px 15px;
+    margin-top:30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    transition: all ease .6s;
+}
+
+.flip-card-back .btn::before{
+    position: absolute;
+    content: '';
+    width:110px;
+    height: 35px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    top:-1px;
+    left: -5px;
+    transition: all ease .6s;
+}
+.flip-card-back .btn::after{
+    position: absolute;
+    content: '';
+    width:110px;
+    height: 35px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    right:-5px;
+    bottom: -1px;
+    transition: all ease .6s;
+}
+.flip-card-back .btn:hover::before,.flip-card-back .btn:hover::after{
+    width: 129px;
+    height: 60px;
+}
+.flip-card-back .btn:hover{
+    color:#fff;
+}
+
+  /* --------------learn more button css end-------------- */
+/* ------------------------flip card css end----------- */
+
+
+ /* --------------contact section css----------------------------------------- */
+
+ .contact{
+     width: 100%;
+     margin: 0 auto;
+     background: #FF5500;
+     position: relative;
+     overflow-x: hidden;
+     overflow-y: hidden;
+ }
+
+ .contact .content{
+     top:0;
+     left: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: #FF5500;
+     margin-bottom:300px;
+ }
+ .contact .content h1{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin:30px 0;
+    color: #fff;
+ }
+
+ .contact .content p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom:20px;
+    color: #fff;
+ }
+
+ /* -----------------GET QUOTE BUTTON------------- */
+ .contact .content .btn{
+    padding:15px 15px;
+    margin-top:30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    transition: all ease .6s;
+}
+
+.contact .content .btn::before{
+    position: absolute;
+    content: '';
+    width:110px;
+    height: 35px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    top:-1px;
+    left: -5px;
+    transition: all ease .6s;
+}
+.contact .content .btn::after{
+    position: absolute;
+    content: '';
+    width:110px;
+    height: 35px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    right:-5px;
+    bottom: -1px;
+    transition: all ease .6s;
+}
+.contact .content .btn:hover::before,.contact .content .btn:hover::after{
+    width: 133px;
+    height: 52px;
+}
+.contact .content .btn:hover{
+    color:#fff;
+}
+ /* -----------------GET QUOTE BUTTON------------- */
+
+ .animation-area{
+     width: 100%;
+     background: #000;
+     height:65vh;
+
+ }
+ .box-area{
+     position: absolute;
+     width: 100%;
+     top:40%;
+     left: 0;
+     z-index:1;
+ }
+
+ .box-area li{
+     position: absolute;
+     width: 25px;
+     height: 25px;
+     display: block;
+     list-style: none;
+     background: rgba(255, 255, 255, 0.3);
+     animation: animate 20s linear infinite;
+ }
+ .box-area li:nth-child(1){
+     left: 86%;
+     width: 80px;
+     height: 80px;
+     animation-delay:0s;
+ }
+ .box-area li:nth-child(2){
+    left:50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-delay:0s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay:0s;
+    filter: blur(2px);
+}
+.box-area li:nth-child(4){
+    left:55%;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    animation-delay:0s;
+    animation-duration:12s;
+    filter: blur(1px);
+}
+.box-area li:nth-child(5){
+    left:40%;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    animation-delay:0s;
+    animation-duration:8s;
+    filter: blur(1px);
+}
+.box-area li:nth-child(5){
+    left:20%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    animation-delay:0s;
+    animation-duration:5s;
+    filter: blur(1px);
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity:0.5;
+    }
+    100%{
+        transform: translateY(-300px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* -----------------------contact form ------------------ */
+.contact-form{
+    width: 85%;
+    min-height: 100vh;
+    position: absolute;
+    background:#fff;
+    margin:0 auto;
+    left:0%;
+    right:0%;
+    top:35%;
+    padding:10px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index:0;
+}
+.contact-form form ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact-form form ul li{
+    list-style: none;
+    width:100%;
+    flex: 1 1 400px;
+    margin-right: 30px;
+}
+.contact-form form input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid rgb(126, 123, 123);
+    width: 100%;
+    margin:0 20px 60px 20px;
+    font-size: 18px;
+}
+.contact-form form textarea{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid rgb(126, 123, 123);
+    width: 100%;
+    height: 60px;
+    margin:10px 20px 20px;
+    font-size: 18px;
+}
+.contact-form form p{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.contact-form form h5{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.contact-form form input:focus{
+    border-bottom: 2px solid #008cff;
+}
+.contact-form form textarea:focus{
+    border-bottom: 2px solid #008cff;
+}
+/* ---------------------------contact us button css---------------------------- */
+.contact-form .btn{
+    padding:15px 15px;
+    margin-top:30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    position: relative;
+    transition: all ease .6s;
+}
+
+.contact-form .btn::before{
+    position: absolute;
+    content: '';
+    width:115px;
+    height: 37px;
+    border-left: 2px solid #FF5500;
+    border-top: 2px solid #FF5500;
+    top:-1px;
+    left: -5px;
+    transition: all ease .6s;
+}
+.contact-form .btn::after{
+    position: absolute;
+    content: '';
+    width:115px;
+    height: 37px;
+    border-bottom: 2px solid #FF5500;
+    border-right: 2px solid #FF5500;
+    right:-5px;
+    bottom: -1px;
+    transition: all ease .6s;
+}
+.contact-form .btn:hover::before,.contact-form .btn:hover::after{
+    width: 144px;
+    height: 52px;
+}
+.contact-form .btn:hover{
+    color:#FF5500;
+}
+/* ---------------------------contact us button css---------------------------- */
+
+/* -----------------------contact form end ------------------ */
+
+/* --------------------------review section css-------------------- */
+.review{
+    width: 100%;
+    margin: 0 auto;
+    background: #000;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+    background: url('../images/testimonial-bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:70% 50%;
+    background-origin: border-box;
+}
+.review .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review .heading h1{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 45px;
+    color: #fff;
+    margin:40px 30px;
+}
+
+.review .slider-container{
+    width: 80%;
+    margin:0 auto;
+}
+.review .slider-container .slides{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review .slider-container .slides p{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height:30px;
+    padding:0 30px;
+    line-break: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.review .slider-container .slides p::before{
+    content:"“";
+    font-family:'Viaoda Libre';
+    font-size: 120px;
+    position: absolute;
+    left:5px;
+    top: 20px;
+}
+.review .slider-container .slides p::after{
+    content:'„';
+    font-family:'Viaoda Libre';
+    font-size: 120px;
+    position: absolute;
+    right:5px;
+    bottom: 30px;
+}
+.review .slider-container .slides h5{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin:10px 0;
+}
+.review .slider-container .slides img{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.review .btn{
+    padding:16px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    transition: all ease .6s;
+    margin-top: 30px;
+}
+
+.review .btn::before{
+    position: absolute;
+    content: '';
+    width:115px;
+    height: 37px;
+    border-left: 2px solid #FF5500;
+    border-top: 2px solid #FF5500;
+    top:-1px;
+    left: -5px;
+    transition: all ease .6s;
+}
+.review .btn::after{
+    position: absolute;
+    content: '';
+    width:115px;
+    height: 37px;
+    border-bottom: 2px solid #FF5500;
+    border-right: 2px solid #FF5500;
+    right:-5px;
+    bottom: -1px;
+    transition: all ease .6s;
+}
+.review .btn:hover::before,.review .btn:hover::after{
+    width: 134px;
+    height: 53px;
+}
+
+/* --------------------------review section css end-------------------- */
+
+/* -------------------------- footer css end-------------------- */
+footer{
+    background: #fff;
+    padding-top: 20px;
+}
+
+footer .row .col-1{
+    flex-basis:30%;
+}
+footer .row .col-1 img{
+    width: 70%;
+    height: auto;
+}
+footer .row .col-1 h5{
+    font-size: 16px;
+    color: #4A4A4A;
+    width: 100%;
+}
+footer .row .col-2{
+    flex-basis:30%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+footer .row .col-2 a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    
+}
+footer .row .col-2 a i{
+    margin: 10px;
+    font-size:18px;
+}
+footer .row .col-2 a p{
+    margin: 10px;
+}
+footer .row .col-3{
+    flex-basis:30%;
+}
+footer .row .col-3 a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    margin-left: 30px;
+    
+}
+footer .row .col-3 a .fa-facebook-square{
+    margin: 10px;
+    font-size:22px;
+    color:#4267B2;
+}
+footer .row .col-3 a .fa-instagram{
+    margin: 10px;
+    font-size:22px;
+    color:#9C58C3;
+}
+footer .row .col-3 a .fa-pinterest{
+    margin: 10px;
+    font-size:22px;
+    color:#E60023;
+}
+footer .row .col-3 a span{
+    margin: 10px;
+}
+.copyright{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FAFAFA;
+    height: 50px;
+    margin-top: 30px;
+    padding:0 8%;
+}
+.copyright a{
+    text-decoration: none;
+    color: #ACACAC;
+    cursor:text;
+    font-size: 12px;
+}
+.copyright p{
+    color: #ACACAC;
+
+}
+/* --------------------------footer css end-------------------- */
+
+
+/* --------------------------------media query------------------------------- */
+
+/* Media Query Laptop 1920px */
+
+@media(min-width:1440px) and (max-width:1920px){
+    .service .row .col-2{
+        flex-basis:60%;
+        margin-left: 70px;
+    }
+    .flip-card{
+        height: 300px;
+        width: 320px;
+        margin: 20px;
+    }
+    .contact-form form ul li{
+        flex: 1 1 500px;
+    }
+    footer .row .col-1{
+        margin:30px 0;
+    }
+    footer .row .col-2{
+        margin:30px 0;
+    }
+    footer .row .col-3{
+        margin:30px 0;
+    }
+}
+@media(min-width:1024px) and (max-width: 1439px){
+    .service .row .col-2{
+        flex-basis:70%;
+    }
+    .flip-card{
+        height: 280px;
+        width: 270px;
+        margin: 10px;
+    }
+    .flip-card-back p{
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .contact-form form ul li{
+        flex: 1 1 350px;
+    }
+    .contact-form{
+        min-height: 100vh;
+    }
+}
+
+/* -------------tablet view responsive---------- */
+@media(min-width:768px) and (max-width:1023px){
+    
+    .whyus-block .heading h1{
+        font-size: 25px;
+    }
+    .whyus-block .sub-heading{
+        font-size:14px;
+    }
+    .whyus-block .row .col-1{
+        flex-basis: 40%;
+    }
+    .whyus-block .row .col-2{
+        flex-basis:40%;
+    }
+    .whyus-block .row .col-2 img{
+        width:100%;
+    }
+    .whyus-block .row .col-1 p{
+        font-size: 15px;
+    }
+    .whyus-block .row .col-1 p::before{
+        height:50px;
+    }
+    .whyus-block .row .col-1 .list-content ul li{
+        font-size: 14px;
+    }
+    .whyus-block .row .col-1 .garageTheme p{
+        font-size: 15px;
+    }
+    .whyus-block .row .col-1 .garageTheme ul li{
+        font-size: 13px;
+    }
+    .flip-card{
+        height: 175px;
+        width: 175px;
+        margin: 10px;
+    }
+    .flip-card-back p{
+        margin-top:-10px;
+        font-size:8px;
+        line-height: 15px;
+    }
+    .flip-card-front h3{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .contact-form form ul li{
+        flex: 1 1 100px;
+    }
+    .flip-card-back .btn{
+        font-size: 10px;
+        padding:8px 12px;
+        margin-bottom:15px;
+    }
+    .flip-card-back .btn::before,.flip-card-back .btn::after{
+        height: 20px;
+        width: 60px;
+    }
+    .flip-card-back .btn:hover::before,.flip-card-back .btn:hover::after{
+        height: 28px;
+        width: 82px;
+    }
+    .contact-form form ul li{
+        flex: 1 1 200px;
+    }
+    .slider .slide h1{
+        font-size: 30px;
+    }
+    .slider .slick-dots{
+        top: 70%;
+        }
+    
+     .slider .slick-dots li{
+            width:30px;
+            height:8px;
+        }
+        .contact-form form p{
+            margin-bottom: 10px;
+        }
+}
+/* ----------------media query for large mobile phones */
+@media(min-width:425px) and (max-width: 767px){
+    .nav-links{
+        display: none;
+    }
+   #menu-bar{
+       display: none;
+   }
+   /* .slide-menu{
+       display: block;
+   } */
+   .row{
+        flex-direction: column;
+   }
+   .contact-form form input{
+       margin:0 20px 20px 20px;
+   }
+   .whyus-block .heading h1{
+    font-size: 20px;
+}
+.whyus-block .sub-heading{
+    font-size:10px;
+    line-height: 12px;
+    text-align: center;
+    width: 90%;
+    margin:0 auto;
+}
+.whyus-block .row .col-1{
+    flex-basis: 40%;
+}
+.whyus-block .row .col-2{
+    flex-basis:40%;
+}
+.whyus-block .row .col-2 img{
+    width:80%;
+}
+.whyus-block .row .col-1 p{
+    font-size: 15px;
+}
+
+.whyus-block .row .col-1 .list-content ul li{
+    font-size: 14px;
+}
+.whyus-block .row .col-1 .garageTheme p{
+    font-size: 15px;
+}
+.whyus-block .row .col-1 .garageTheme ul{
+    margin-right: 10px;
+}
+.whyus-block .row .col-1 .garageTheme ul li{
+    font-size: 16px;
+    flex: 1 1 1 250px;
+    margin-bottom: 10px;
+}
+.service .row .col-2{
+    margin-left: 10px;
+}
+.flip-card{
+    height: 155px;
+    width: 155px;
+    margin: 10px;
+}
+.flip-card-back p{
+    margin-top:-20px;
+    font-size:6px;
+    line-height:14px;
+}
+.flip-card-front h3{
+    font-size: 14px;
+    line-height:15px;
+}
+.flip-card-front p{
+    font-size:10px;
+    width:18px;
+    height: 18px;
+    border-radius: 50%;
+}
+.flip-card-back .btn::before,.flip-card-back .btn::after{
+    height: 20px;
+    width: 60px;
+}
+.flip-card-back .btn:hover::before,.flip-card-back .btn:hover::after{
+    height: 28px;
+    width: 82px;
+}
+.contact .content .btn{
+    margin-bottom: 40px;
+}
+.contact-form form ul li{
+    flex: 1 1 100px;
+}
+.flip-card-back .btn{
+    font-size: 10px;
+    padding:8px 12px;
+    margin-bottom:25px;
+}
+.service .row .col-1{
+    flex-basis: 40%;
+    align-items: center;
+    padding:15px 0;
+}
+.service .row .col-1 h1{
+    font-size: 25px;
+}
+.service .row .col-1 p{
+    text-align: center;
+    font-size: 14px;
+}
+.contact-form form{
+    padding: 30px 0;
+}
+.contact-form form ul li{
+    flex: 1 1 200px;
+}
+.contact-form form p{
+    margin-bottom:5px;
+}
+.contact-form form input{
+    margin:0 20px 20px 20px;
+}
+.contact .content h1{
+    font-size: 30px;
+    margin:15px 0;
+}
+.contact .content p{
+    font-size: 15px;
+    width: 90%;
+    margin:0 auto;
+}
+.slider .slide h1{
+    top: 65%;
+    font-size: 20px;
+}
+.slider .slick-dots{
+    top: 80%;
+    }
+
+ .slider .slick-dots li{
+        width:30px;
+        height:8px;
+    } 
+    .review .slider-container{
+        width:95%;
+    }
+    .review .slider-container .slides p{
+        font-size: 12px;
+        line-height:15px;
+        text-align: center;
+        margin-left: 10px;
+        width: 95%;
+    }
+    .review .slider-container .slides p::before{
+        margin-left:-12px;
+    }
+    footer .row .col-1 img{
+        width: 30%;
+       
+    }
+    footer .row .col-1 h5{
+       margin-top: 20px;
+    }
+    footer .row .col-2{
+        margin-left:0px;
+        margin-top: 20px;
+    }
+    
+    footer .row .col-3{
+       margin-left:-280px;
+       margin-top: 20px;
+    }
+    nav{
+        width: 90%;
+        padding-top: 20px;
+    }
+    header nav .logo{
+        width: 100px;
+    }
+    header nav .btn{
+        padding:4px 6px;
+        font-size: 12px;
+    }
+    header nav .btn::before{
+        height: 25px;
+        width: 120px;
+    }
+    
+}
+
+/* ----------------media query for large mobile phones */
+@media(min-width:320px) and (max-width:424px){
+    .nav-links{
+        display: none;
+    }
+    #menu-bar{
+        display: block;
+    }
+    .slide-menu{
+        display:none;
+    }
+    .row{
+         flex-direction: column;
+    }
+    .contact-form form input{
+        margin:0 20px 20px 20px;
+    }
+    .whyus-block .heading h1{
+     font-size: 20px;
+ }
+ .whyus-block .sub-heading{
+     font-size:10px;
+     line-height: 12px;
+     text-align: center;
+     width: 90%;
+     margin:0 auto;
+ }
+ .whyus-block .row .col-1{
+     flex-basis: 40%;
+ }
+ .whyus-block .row .col-2{
+     flex-basis:40%;
+ }
+ .whyus-block .row .col-2 img{
+     width:80%;
+ }
+ .whyus-block .row .col-1 p{
+     font-size: 15px;
+ }
+ 
+ .whyus-block .row .col-1 .list-content ul li{
+     font-size: 14px;
+ }
+ .whyus-block .row .col-1 .garageTheme p{
+     font-size: 15px;
+ }
+ .whyus-block .row .col-1 .garageTheme ul{
+     margin-right: 10px;
+ }
+ .whyus-block .row .col-1 .garageTheme ul li{
+     font-size: 14px;
+     flex: 1 1 1 250px;
+     margin-bottom: 10px;
+ }
+ .service .row .col-2{
+     margin-left: 10px;
+ }
+ .service .row .col-2 .card-space{
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ .flip-card{
+     height: 220px;
+     width:280px;
+     margin: 10px;
+ }
+ .flip-card-back p{
+     margin-top:-10px;
+     font-size:15px;
+     line-height:20px;
+ }
+ .flip-card-front h3{
+     font-size: 25px;
+     line-height:30px;
+ }
+ .flip-card-front p{
+     font-size:14px;
+     width:35px;
+     height: 35px;
+     border-radius: 50%;
+ }
+ .flip-card-back .btn::before,.flip-card-back .btn::after{
+     height: 20px;
+     width: 60px;
+ }
+ .flip-card-back .btn:hover::before,.flip-card-back .btn:hover::after{
+     height: 28px;
+     width: 82px;
+ }
+ .contact .content .btn{
+     margin-bottom: 40px;
+ }
+ .contact-form form ul li{
+     flex: 1 1 100px;
+ }
+ .flip-card-back .btn{
+     font-size: 10px;
+     padding:8px 12px;
+     margin-bottom:25px;
+ }
+ .service .row .col-1{
+     flex-basis: 40%;
+     align-items: center;
+     padding:15px 0;
+ }
+ .service .row .col-1 h1{
+     font-size:18px;
+ }
+ .service .row .col-1 p{
+     text-align: center;
+     font-size: 14px;
+ }
+ .contact-form form{
+     padding: 30px 0;
+ }
+ .contact-form form ul li{
+     flex: 1 1 200px;
+ }
+ .contact-form form p{
+     margin-bottom:5px;
+ }
+ .contact-form form input{
+     margin:0 20px 20px 20px;
+ }
+ .contact .content h1{
+     font-size: 30px;
+     margin:15px 0;
+ }
+ .contact .content p{
+     font-size: 15px;
+     width: 90%;
+     margin:0 auto;
+ }
+ .slider .slide h1{
+     top: 65%;
+     font-size: 20px;
+ }
+ .slider .slick-dots{
+     top: 80%;
+     }
+ 
+  .slider .slick-dots li{
+         width:30px;
+         height:8px;
+     } 
+     .review .slider-container{
+         width:95%;
+     }
+     .review .slider-container .slides p{
+         font-size: 12px;
+         line-height:15px;
+         text-align: center;
+         margin-left: 10px;
+         width: 95%;
+     }
+     .review .slider-container .slides p::before{
+         margin-left:-12px;
+     }
+     footer{
+         height: 100vh;
+     }
+     footer .row .col-1 img{
+         width: 30%;
+        
+     }
+     footer .row .col-1 h5{
+        margin-top: 20px;
+     }
+     footer .row .col-2{
+         margin-left:0px;
+         margin-top: 20px;
+     }
+     
+     footer .row .col-3{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: -50px;
+     }
+     nav{
+         width: 90%;
+         padding-top: 20px;
+     }
+     header nav .logo{
+         width: 100px;
+     }
+     header nav .btn{
+         padding:4px 6px;
+         font-size: 12px;
+     }
+     header nav .btn::before{
+         height: 25px;
+         width: 120px;
+     }
+ }
+ 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #test{
+        height: 150px;
+        width: 150px;
+        background: cadetblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    #test1{
+        height: 50px;
+        width: 50px;
+        background: crimson;
+    }
+
+</style>
+<body>
+    <div id="test">
+        <div id="test1"></div>
+    </div>
+    <script>
+        
+        var test1=document.getElementById('test1');
+        test1.addEventListener('ontoggle',function abc(){
+            test1.style.opacity=0.5;
+        });
+       
+        var a=150;
+        var id=setInterval(anim,50);
+        function anim(){
+            a=a+10;
+            if(a==500){
+                clearInterval(id);
+            }
+           var box= document.getElementById('test');
+           box.style.width=a+'px';
+           box.style.height=a+'px';
+        }
+        
+    </script>
+</body>
+</html>

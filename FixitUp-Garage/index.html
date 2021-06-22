@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title> FixItUp Garage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+
+<body>
+    <!-- ---------------------navbar ----------------- -->
+    <header id="header">
+        <nav >
+            <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Products</a></li>
+                </ul>
+            </div>
+            <a href="" class="btn"><i class="fas fa-phone-alt"></i><span>630-699-5861</span></a>
+            <i id="menu-bar" class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <div class="slide-menu" id="nav-links">
+        <ul>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a></li>
+        </ul>
+    </div>
+    <!-- ---------------------carausal------------------ -->
+    <section class="slider">
+        <div class="autoplay">
+            <div class="slide">
+                <h1>Professionally Transforming Garages</h1>
+                <img src="images/banner.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1>Organize, Repurpose & Impress</h1>
+                <img src="images/banner2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1>Garage Flooring & Storage Solutions</h1>
+                <img src="images/banner-3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1> Audio, TV & Lighting</h1>
+                <img src="images/banner-4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------why us section------------------    -->
+    <section class="whyus-block">
+        <div class="heading" data-aos="fade-up" data-aos-duration="2000">
+            <img src="images/zig-zag.svg" alt="">
+            <h1>Why Fix It Up Garages</h1>
+            <img src="images/zig-zag.svg" alt="">
+        </div>
+        <p class="sub-heading">When you hire Fixitup Garage Pros you can relax while we help create the garage space you
+            envision.
+             We're your local Garage Renovation Company in Naperville, IL
+        </p>
+        <div class="row">
+            <div class="col-1" data-aos="fade-up" data-aos-duration="2000">
+                <p>With every project we aim to exceed our client's expectations and deliver on our promise.</p>
+                <div class="list-content">
+                    <ul>
+                        <li>Free Virtual Design Consultation & Project Estimate</li>
+                        <li>Team Transparency in the Remodeling Process</li>
+                        <li>Our goal is to deliver on time and within budget.</li>
+                        <li>Why not fix it up and take your garage space to the next level?</li>
+                    </ul>
+                </div>
+                <div class="garageTheme" data-aos="fade-up" data-aos-duration="2000">
+                    <p>Garage Themes & Ideas</p>
+                    <ul>
+                        <li>Family Gym</li>
+                        <li>Man Cave</li>
+                        <li>Home Office</li>
+                        <li>Hobby Room</li>
+                        <li>Arts & Crafts</li>
+                        <li>Zen Space</li>
+                        <li>The Kids Zone</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2" data-aos="fade-left" data-aos-duration="2000">
+                <img src="images/why-us-right.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------service section---------------------- -->
+    <section class="service">
+        <div class="service-bg">
+            <img src="images/door-back.png" alt="">
+        </div>
+        <div class="row">
+            <div class="col-1" data-aos="fade-up" data-aos-duration="1500">
+                <img src="images/zig-zag.svg" alt="">
+                <h1 >Garage Remodeling Services</h1>
+                <img src="images/zig-zag.svg" alt="">
+                <p>With every project we aim to exceed our client's expectations and deliver on our promise.</p>
+                <a href="" class="btn">More Services</a>
+            </div>
+            <!-------------------- flip card-------------------------- -->
+            <div class="col-2">
+                <div class="card-space"  data-aos="fade-down" data-aos-duration="1500">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>1</p>
+                                <h3>Epoxy <br> Flooring</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem libero
+                                    voluptatem sit laborum, in repellendus quas itaque optio eveniet beatae possimus</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>2</p>
+                                <h3>Shelving & Cabinetry</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem libero
+                                    voluptatem sit laborum, in repellendus quas itaque optio eveniet beatae possimus</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>3</p>
+                                <h3>Clean, Organize & Declutter</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem libero
+                                    voluptatem sit laborum, in repellendus quas itaque optio eveniet beatae possimus</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p>4</p>
+                                <h3>Audio, TV & Lighting</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem libero
+                                    voluptatem sit laborum, in repellendus quas itaque optio eveniet beatae possimus</p>
+                                <a href="#" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------flip card end---------------- -->
+        </div>
+
+    </section>
+    <!-- ------------------contact section------------------- -->
+    <section class="contact">
+        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+            <h1>FixItUp Garage Pros</h1>
+            <p>All the Professionals you need to Design, Plan, Start, Organize, Manage,
+                Finish & Deliver Your <br> Garage Transformation!</p>
+            <a href="" class="btn">GET QUOTE</a>
+        </div>
+        <div class="animation-area">
+            <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="contact-form" data-aos="zoom-out-down" data-aos-duration="1500">
+            <form action="/action_page.php">
+                <ul>
+                    <li>
+                        <p>Full Name</p>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <p>Email</p>
+                        <input type="email">
+                    </li>
+                    <li>
+                        <p>Phone</p>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <p>City</p>
+                        <input type="text">
+                    </li>
+                </ul>
+                <div class="msg">
+                    <h5>Message</h5>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+            <a href="" class="btn">CONTACT US</a>
+        </div>
+    </section>
+    <!-- ------------------contact section end------------------- -->
+    <!-- -------------------------review section----------------------------- -->
+    <section class="review">
+        <div class="heading" data-aos="fade-up" data-aos-duration="1500">
+            <img src="images/zig-zag.svg" alt="">
+            <h1>Reviews</h1>
+            <img src="images/zig-zag.svg" alt="">
+        </div>
+        <div class="slider-container">
+            <div class="carousel">
+                <!-- slide-1 -->
+                <div class="slides">
+                    <p>ISed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, </p>
+
+                    <h5>-CARON L.</h5>
+                    <div class="compare-img">
+                        <img src="images/comparison1.png" alt="">
+                    </div>
+                </div>
+                 <!-- slide-2 -->
+                <div class="slides">
+                    <p>ISed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, </p>
+
+                    <h5>-CARON L.</h5>
+                    <div class="compare-img">
+                        <img src="images/comparison1.png" alt="">
+                    </div>
+                </div>
+                 <!-- slide-3 -->
+                <div class="slides">
+                    <p>ISed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, </p>
+
+                    <h5>-CARON L.</h5>
+                    <div class="compare-img">
+                        <img src="images/comparison1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">VIEW ALL</a>
+    </section>
+    <!-- -------------------------review section end----------------------------- -->
+    
+    <!-- ---------------------------------footer section--------------------------- -->
+    <footer>
+        <div class="row">
+            <div class="col-1" data-aos="fade-right" data-aos-duration="1500">
+                <img src="images/logo.png" alt="">
+                <h5>ILLINOIS - CHICAGO - NAPERVILLE</h5>
+            </div>
+            <div class="col-2" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">
+                <a href=""><i class="fas fa-phone-alt"></i><p>630-699-5861</p></a>
+                <a href=""><i class="fas fa-envelope"></i><p>info@fixitupgarages.com</p></a>
+                <a href=""><i class="fas fa-map-marker-alt"></i><p>425 Jackson Ave, Naperville, IL 60540, United States</p></a>
+            </div>
+            <div class="col-3" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">
+                <a href=""><i class="fab fa-facebook-square"></i><span>Facebook</span></a>
+                <a href=""><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                <a href=""><i class="fab fa-pinterest"></i><span>Pinterest</span></a>
+            </div>
+        </div>
+        <div class="copyright">
+           <a href=""><i class="far fa-copyright"></i><span>Copyright 2020. All Rights Reserved.</span> </a>
+            <p>Powered by Amazing7 Studios</p>
+        </div>
+    </footer>
+    <!-- ---------------------------------footer section end--------------------------- -->
+
+    <!-- ---------------------------javascript script file--------------------- -->
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        var icon=document.getElementById('menu-bar');
+function showMenu(){
+    var x=document.getElementById("nav-links");
+  if (x.style.display == "block") {
+    x.style.display = "none";
+    icon.classList='fas fa-bars';
+  } else {
+    x.style.display = "block";
+    icon.classList='fas fa-times';
+  }
+}
+    </script>
+</body>
+
+</html>

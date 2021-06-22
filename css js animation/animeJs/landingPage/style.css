@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#111;
+    font-family: "Barlow Condensed";
+}
+header{
+    padding :40px 50px;
+}
+header .logo{
+    float: left;
+    color: #fff;
+    font-size: 25px;
+}
+header .menu{
+    float: right;
+}
+header .menu ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+header .menu ul li:last-child{
+    margin-right: 0;
+}
+header .menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+header .menu ul li a:hover{
+    color: #fff700;
+}
+header .menu ul .btn a{
+    color:#000 ;
+    padding: 14px 27px;
+    background: #fff700;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+header .menu ul .btn a:hover{
+    border-radius: 15px;
+    border-top-left-radius:0;
+    border-bottom-right-radius:0;
+    color: black;
+}
+.home .container{
+    max-width: 1266px;
+    margin:0 auto;
+}
+.home .person{
+    float: right;
+    margin: 70px 180px 0;
+    position: relative;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+}
+.home .img{
+    width:300px;
+    height: 600px;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #333;
+}
+.home .img img{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    filter:brightness(1);
+}

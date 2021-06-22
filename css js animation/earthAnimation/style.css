@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4faff;
+    overflow: hidden;
+}
+.earth{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #0588e4 url('images/earth.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow:inset 0 0 50px rgba(0, 0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    animation: animate 24s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position:0 0;
+    }
+    100%{
+        background-position:719px 0;
+    }
+}
+.earth img{
+    width: 30%;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 2;
+    position: relative;
+}
+.earth img::after{
+    content: '';
+    position: absolute;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    z-index:4;
+}
+.earth:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url('images/cloud.png');
+    background-size: cover;
+    animation: animate 18s linear infinite;
+}
+.earth:active{
+    transform: scale(5);
+}
+.earth:active img{
+    transform:rotate(-90deg) scale(0.2);
+}

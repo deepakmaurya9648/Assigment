@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Hello{
+            //type of methods-------------
+            //--------constructor
+            constructor(name){
+                this.fname=name;
+                console.log("constructor have no need to call it automaticaly call!")
+            }
+            //--prototype mwthod
+            message(){
+                console.log("call by creating object my name is " +this.fname);
+            }
+            //--static method
+           static sorry(){
+                console.log("hello sorry!")
+            }
+            
+        }
+        //---creating object-- of hello
+        let a=new Hello("deepak");
+        // a.name="deepak";
+        a.message();
+        Hello.sorry();
+    </script>
+</body>
+
+</html>
