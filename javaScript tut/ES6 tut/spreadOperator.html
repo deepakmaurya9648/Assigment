@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread operator</h1>
+    <script>
+        // spread operator always defined at time of calling the function
+        //  function sum(name,...args){
+        //     let sum=0;
+        //     for(let i in args){
+        //         sum+=args[i];
+        //     }
+        //     console.log(sum);
+        //     console.log(name);
+        // }
+        // var arr=[10,20,30,40,100]
+        // sum("deepak",...arr);
+
+// use of array concatation and object concatation
+        let arr1=[1,2,3,4];
+        let arr2=[5,6,7];
+        let arr3=[...arr1,...arr2];
+        console.log(arr3);
+        //
+
+
+    </script>
+</body>
+</html>

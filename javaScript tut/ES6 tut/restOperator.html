@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rest operator</h1>
+    <script>
+        // function sum(){
+        //     let sum=0;
+        //     for(let i in arguments){
+        //         sum+=arguments[i];
+        //     }
+        //     console.log(sum);
+        // }
+        // sum(10,20,30,40);
+        // sum(10,40,50);
+// rest operator always call at time of declaring a function
+        function sum(name,course,...args){
+            let sum=0;
+            for(let i in args){
+                sum+=args[i];
+            }
+            console.log(sum);
+            console.log(name);
+            console.log(course)
+        }
+        sum("deepak","btech",10,20,30,40);
+        
+    </script>
+</body>
+</html>
