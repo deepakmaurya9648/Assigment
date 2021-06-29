@@ -22,7 +22,7 @@ h1{
     height: 100%;
     width: 100%;
     position: absolute;
-    transition: 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    
 }
 .slide-image h2{
     color: #fff;

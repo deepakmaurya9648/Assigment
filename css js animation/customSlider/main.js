@@ -70,12 +70,12 @@ function setActiveClass(){
     currentDot.classList.remove("active");
     navigationDots.children[currentSlide].classList.add("active");
 }
-let autoPlay=setInterval(()=>{
-    if(currentSlide>=noOfImage-1){
-        goToSlide(0);
-        return;
-    }
-    currentSlide++;
-     goToSlide(currentSlide);
-},4000);
+// let autoPlay=setInterval(()=>{
+//     if(currentSlide>=noOfImage-1){
+//         goToSlide(0);
+//         return;
+//     }
+//     currentSlide++;
+//      goToSlide(currentSlide);
+// },4000);
 
